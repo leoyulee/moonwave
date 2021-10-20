@@ -69,7 +69,7 @@ export default function getDocusaurusConfig({
             ? [{ to: "/changelog", label: "Changelog", position: "left" }]
             : []),
           ...(config?.navbar?.items || []),
-          ...(gitRepoUrl
+          ...(gitRepoUrl && gitRepoUrl.length > 0
             ? [
                 {
                   href: gitRepoUrl,
